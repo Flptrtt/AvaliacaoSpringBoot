@@ -22,7 +22,7 @@ public class Matricula {
     private Integer id;
 
     @JoinColumn(name = "aluno_id")
-    @OneToOne
+    @ManyToOne 
     private Aluno aluno;
 
     @JoinColumn(name = "professor_id")

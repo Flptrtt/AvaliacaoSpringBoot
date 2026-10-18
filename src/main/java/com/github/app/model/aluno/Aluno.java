@@ -32,7 +32,7 @@ public class Aluno {
         this.nome = dados.nome();
         this.email = dados.email();
         this.telefone = dados.telefone();
-        this.ra = dados.curso();
+        this.ra = dados.ra();// primeiro erro 
         this.curso = dados.curso();
         this.endereco = new Endereco(dados.endereco());
     }

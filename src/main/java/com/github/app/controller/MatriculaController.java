@@ -31,7 +31,7 @@ public class MatriculaController {
     @PostMapping
     @Transactional
     public void cadastrar(@RequestBody DadosCadastroMatricula dados) {
-        Aluno aluno = alunoRepository.getReferenceById(dados.idAluno());
+        Aluno aluno = alunoRepository.getReferenceById(dados.alunoId());
         Professor professor = professorRepository.getReferenceById(dados.professorId());
         Matricula matricula = new Matricula(dados);
         matricula.setAluno(aluno);
